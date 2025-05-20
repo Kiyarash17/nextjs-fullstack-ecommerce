@@ -9,42 +9,21 @@ export default function Header() {
   const isActive = (path: string) => pathname === path;
 
   const left = (
-    <div className="left">
-      <Link href="/" className={`bold ${isActive("/") ? "active" : ""}`}>
+    <div className="flex items-center space-x-4">
+      <Link 
+        href="/" 
+        className={`font-bold no-underline text-black inline-block ${
+          isActive("/") ? "text-gray-500" : "hover:text-gray-600"
+        }`}
+      >
         Feed
       </Link>
-      <style jsx>{`
-        .bold {
-          font-weight: bold;
-        }
-
-        a {
-          text-decoration: none;
-          color: #000;
-          display: inline-block;
-        }
-
-        .active {
-          color: gray;
-        }
-
-        a + a {
-          margin-left: 1rem;
-        }
-      `}</style>
     </div>
   );
 
   return (
-    <nav>
+    <nav className="flex p-8 items-center">
       {left}
-      <style jsx>{`
-        nav {
-          display: flex;
-          padding: 2rem;
-          align-items: center;
-        }
-      `}</style>
     </nav>
   );
 }

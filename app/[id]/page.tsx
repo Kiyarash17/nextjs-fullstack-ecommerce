@@ -2,8 +2,9 @@ import React from "react"
 import Layout from "../../components/Layout"
 import Post from "../../components/Post"
 
-async function getPost(id: string) {
+async function getPost() {
   // This is where you would typically fetch data from your database
+
   const post = {
     id: "1",
     title: "Prisma is the perfect ORM for Next.js",
@@ -17,20 +18,16 @@ async function getPost(id: string) {
   return post
 }
 
-export default async function PostPage({ params }: { params: { id: string } }) {
-  const post = await getPost(params.id)
-  
+
+
+export default async function PostPage() {
+  const post = await getPost()
+
   return (
     <Layout>
-      <div className="page">
+      <div className="bg-white p-8">
         <Post post={post} />
       </div>
-      <style jsx>{`
-        .page {
-          background: white;
-          padding: 2rem;
-        }
-      `}</style>
     </Layout>
   )
 }
