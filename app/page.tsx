@@ -1,6 +1,7 @@
 import Layout from "../components/Layout"
 import Post from "../components/Post"
 
+
 async function getFeed() {
   // This is where you would typically fetch data from your database
   const feed = [
