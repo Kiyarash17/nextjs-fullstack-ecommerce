@@ -1,19 +1,15 @@
+import type { Post } from '@prisma/client'
 import Link from "next/link";
 // import ReactMarkdown from "react-markdown";
 
-export type PostProps = {
-  id: string;
-  title: string;
-  author: {
-    name: string;
-    email: string;
-  } | null;
-  content: string;
-  published: boolean;
-};
 
-export default function Post({ post }: { post: PostProps }) {
-  const authorName = post.author ? post.author.name : "Unknown author";
+type Props = {
+  post: Post
+}
+
+export default function Post({ post }: Props) {
+  // const authorName = post.author ? post.author.name : "Unknown author";
+  const authorName = post.authorId ? post.authorId : "Unknown author";
   return (
     <Link
       href={`/p/${post.id}`}
