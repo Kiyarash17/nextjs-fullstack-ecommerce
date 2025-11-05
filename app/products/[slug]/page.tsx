@@ -1,10 +1,15 @@
+// app/products/[slug]/page.tsx
 import { prisma } from '@/lib/prisma';
 import ProductDetails from './product-details';
 
-type Props = { params: { slug: string } };
+export default async function ProductPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
 
-export default async function ProductPage({ params }: Props) {
-  const product = await prisma.product.findUnique({ where: { slug: params.slug } });
+  const product = await prisma.product.findUnique({ where: { slug } });
   if (!product || !product.active) {
     return (
       <main className="main">

@@ -11,7 +11,7 @@ export default function Header() {
   const count = useCart(s => s.count);
   const refresh = useCart(s => s.refresh);
 
-  useEffect(() => { refresh(); }, []); // فقط یک بار
+  useEffect(() => { refresh() }, [refresh]); // فقط یک بار
 
   return (
     <header className={cn(
