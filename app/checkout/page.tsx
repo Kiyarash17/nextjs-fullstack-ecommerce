@@ -92,7 +92,7 @@ export default function CheckoutPage() {
         <div className="md:col-span-1 card-base p-4 h-max">
           <h2 className="font-bold mb-2">توضیحات</h2>
           <p className="text-sm text-slate-600 leading-7">
-            این یک نمونهٔ دانشگاهی است. بعد از ثبت سفارش، سبد شما خالی می‌شود و شمارهٔ سفارش نمایش داده خواهد شد.
+            این یک کیا استورٔ دانشگاهی است. بعد از ثبت سفارش، سبد شما خالی می‌شود و شمارهٔ سفارش نمایش داده خواهد شد.
           </p>
         </div>
       </form>

@@ -1,15 +1,15 @@
 // app/about/page.tsx
 export const metadata = {
-  title: 'درباره ما | فروشگاه نمونه',
+  title: 'درباره ما | فروشگاه کیا استور',
   description:
-    'معرفی کوتاه فروشگاه نمونه: مأموریت، ارزش‌ها، تکنولوژی و راه‌های ارتباطی.',
+    'معرفی کوتاه فروشگاه کیا استور: مأموریت، ارزش‌ها، تکنولوژی و راه‌های ارتباطی.',
   alternates: { canonical: '/about' },
   openGraph: {
-    title: 'درباره ما | فروشگاه نمونه',
+    title: 'درباره ما | فروشگاه کیا استور',
     description:
-      'معرفی کوتاه فروشگاه نمونه: مأموریت، ارزش‌ها، تکنولوژی و راه‌های ارتباطی.',
+      'معرفی کوتاه فروشگاه کیا استور: مأموریت، ارزش‌ها، تکنولوژی و راه‌های ارتباطی.',
     url: '/about',
-    siteName: 'فروشگاه نمونه',
+    siteName: 'فروشگاه کیا استور',
     type: 'website',
   },
 };
@@ -18,7 +18,7 @@ export default function AboutPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'فروشگاه نمونه',
+    name: 'فروشگاه کیا استور',
     url: 'https://example.com',
     logo: 'https://example.com/logo.png',
     sameAs: ['https://instagram.com/yourbrand'],
@@ -98,7 +98,7 @@ export default function AboutPage() {
         <div className="card-base p-4">
           <h3 className="font-bold mb-1">سوالات متداول (کوتاه)</h3>
           <ul className="text-sm text-slate-600 leading-7 list-disc pr-5">
-            <li>ارسال: دانشگاهی/نمونه؛ ارسال واقعی ندارد.</li>
+            <li>ارسال: دانشگاهی/کیا استور؛ ارسال واقعی ندارد.</li>
             <li>پرداخت: شبیه‌سازی‌شده؛ فقط ثبت سفارش تست.</li>
             <li>حریم خصوصی: فقط کوکی سبد ناشناس ذخیره می‌شود.</li>
           </ul>
