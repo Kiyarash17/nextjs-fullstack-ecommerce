@@ -77,9 +77,7 @@ export default function ProductDetails({ product }: { product: Product }) {
         </div>
 
         <div className="mt-8 text-sm text-slate-500 leading-7">
-          توضیحات کیا استورٔ محصول. در پروژهٔ دانشگاهی می‌توانید این بخش را ساده نگه دارید
-          یا فیلد «description» را بعداً به مدل اضافه کنید.
-        </div>
+این محصول از بهترین متریال استفاده شده تا بهترین خروجی را داشته باشد        </div>
       </div>
     </div>
   );
